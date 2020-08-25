@@ -1,0 +1,68 @@
+body *:focus {outline:none}
+* {box-sizing: border-box; margin: 0;}
+div, section, article, header, figure, nav, footer, label, main, button, aside, form {position:relative}
+img {max-width:100%}
+a { position: relative; text-decoration:none; transition:color .25s ease-out; font-weight: 400;}
+a:hover {text-decoration:none; color: #bc2222; }
+a:focus {text-decoration:none; color: #bc2222; }
+ul {list-style:none; padding:0}
+span { hyphens: auto; }
+ol li, ul li { text-align: justify; hyphens: auto; }
+ol li + li, ul li + li { margin-top: 24px; }
+ul li:first-of-type, ol li:first-of-type { margin-top: 16px; }
+span.title, p  { font-family: 'Montserrat', sans-serif; hyphens: auto; }
+p {margin: 0; text-align: justify; hyphens: auto;}
+html, body { line-height: 26px; font-family: 'Montserrat', sans-serif; font-size:16px; font-weight:@font-weight-default; letter-spacing: .3px; -moz-osx-font-smoothing:grayscale; -webkit-text-size-adjust:100%; text-rendering:optimizeLegibility; -webkit-font-smoothing:antialiased; padding: 0!important;}
+h1, h2, h3, h4, h5, ul li, ul li a { font-family: 'Montserrat',sans-serif; }
+span { font-family: 'Bebas Neue',sans-serif; }
+@media @media-l-min {
+  html, body { font-size:@font-size-default; }
+}
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+}
+h1 { font-size: 60px; }
+h2 { font-size: 48px; }
+h3 { font-size: 36px; }
+h4 { font-size: 30px; }
+h5 { font-size: 24px; }
+
+
+@media @media-l-min {
+  html, body { font-size: 20px; line-height: 32px; }
+  h1 { font-size: 72px; }
+  h2 { font-size: 60px; }
+  h3 { font-size: 48px; }
+  h4 { font-size: 36px; }
+  h5 { font-size: 30px; }
+}
+
+.h100p {height:100%}
+
+html.overflow,
+body.overflow { overflow: unset; height: 100%;}
+
+// sticky footer
+body {display:flex;min-height:100vh;flex-direction:column; position: relative; }
+.page-wrap {flex:1 0 auto; overflow: hidden; padding-top: 0; width: 100%; }
+
+svg { transition: fill .25s ease-out; }
+
+.clearfix:before,
+.clearfix:after { content: ""; display: table; }
+.clearfix:after { clear: both; }
+
+div,p,a { letter-spacing: 0; }
+
+#nette-debug:after {
+  -webkit-user-drag:element;content:"XS";position:fixed;top:0;left:0;z-index:9999999;background:#cc0000;padding:5px 15px;text-align:center;font-weight:bold;color:#fff;pointer-events:none;
+  @media @media-s-min {content:"S"}
+  @media @media-m-min {content:"M"}
+  @media @media-l-min {content:"L"}
+  @media @media-xl-min {content:"XL"}
+  @media @media-xxl-min {content:"XXL"}
+  &:hover {opacity:.1}
+}
+
+

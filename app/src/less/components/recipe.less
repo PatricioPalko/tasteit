@@ -1,0 +1,8 @@
+.comp__recipe {
+  min-height: 400px; background-size: cover; background-repeat: no-repeat; background-position: center; flex: 1 0 33%; max-width: calc(33% - 7px); margin-left: 16px; margin-top: 16px;
+  &:after { content: ""; background-color: rgba(35,37,45,.25); position: absolute; left: 0; right: 0; bottom: 0; top: 0; transition: 0.25s all ease-in; }
+  .title { position: absolute; left: 24px; bottom: 24px; right: 24px; color: #fff; z-index: 2; }
+
+  &:hover:after { background-color: rgba(35,37,45,0.1); }
+  &:nth-of-type(3n+1) { margin-left: 0; }
+}

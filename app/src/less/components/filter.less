@@ -1,0 +1,12 @@
+.comp__filter {
+  padding: 16px 0;
+  form ul {
+    display: flex; align-items: baseline; justify-content: center;
+    li { margin-bottom: 32px; }
+    li + li { margin-left: 32px; }
+    li input { display: none; }
+    li input:checked~label { border-bottom: 2px solid #44bc67; }
+    li label { padding: 8px; border-bottom: 2px solid transparent; transition: 0.25s all ease-in; }
+    li label:hover { border-bottom: 2px solid #44bc67; cursor: pointer; }
+  }
+}

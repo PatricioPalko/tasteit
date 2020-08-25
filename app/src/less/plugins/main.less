@@ -1,0 +1,21 @@
+.tpl__main {
+  .tpl {
+    .mainWrapper {
+      display: flex; flex-direction: column; min-height: 100vh;
+      .mainPicture { background: red no-repeat center; min-height: 50vh; background-size: cover; filter: grayscale(100%); opacity: 0.85; transition: 0.25s filter, 0.25s opacity ease-in-out;
+        &:hover { filter: grayscale(0%); opacity: 1; }
+      }
+      .logoWrapper { width: 260px; height: 180px; position: absolute; top: 0; left: 0; right: 0; bottom: 0; margin: auto; z-index: 999; }
+    }
+
+    @media @media-l-min {
+      .mainWrapper {
+        flex-direction: row;
+        .mainPicture { min-height: 100vh; }
+        .logoWrapper { width: 460px; height: 287px; }
+      }
+    }
+  }
+}
+
+
